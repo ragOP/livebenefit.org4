@@ -33,7 +33,7 @@ export default function Chatbot() {
         sender: "bot",
       },
       {
-        text: "Emily this side. Let’s find out if you qualify for the $5800 Spending Allowance — it’s quick and only takes 2 minutes!",
+        text: "Emily this side. Let’s find out if you qualify for a 100% Emergency Debt Relief — it’s quick and only takes 2 minutes!",
         sender: "bot",
         time: new Date().toTimeString(),
       },
@@ -88,18 +88,18 @@ export default function Chatbot() {
     if (option === "👉 Yes! Show me how to claim!") {
       botResponses = [
         {
-          text: "Awesome! Let's get you the benefit ASAP. I just need to ask you a couple of quick questions.",
+          text: "Awesome! Let's qualify you ASAP. I just need to ask you a couple of quick questions.",
           sender: "bot",
         },
         {
-          text: "Are you over the age of 18?",
+          text: "Do you have over $15,000 in credit card debt?",
           sender: "bot",
-          options: ["Yes! I am over 18 years old", "No, I am 17 or younger"],
+          options: ["Yes I Have", "No I Don't"],
         },
       ];
     } else if (
-      option === "Yes! I am over 18 years old" ||
-      option === "No, I am 17 or younger"
+      option === "Yes I Have" ||
+      option === "No I Don't"
     ) {
       botResponses = [
         {
@@ -112,7 +112,7 @@ export default function Chatbot() {
     else if (option === "Yes " || option === "No ") {
       botResponses = [
         {
-          text: "Do you make less than $80,000 per year?",
+          text: "Do you have any active personal loans?",
           sender: "bot",
           options: ["Yes", "No"],
         },
@@ -124,7 +124,7 @@ export default function Chatbot() {
           sender: "bot",
         },
         {
-          text: "Based on what you've told me, you’re eligible for the $5800 Spending Allowance!",
+          text: "Based on what you've told me, you’re eligible for a 100% Emergency Debt Relief!",
           sender: "bot",
         },
       ];
@@ -186,7 +186,7 @@ export default function Chatbot() {
         <div className="flex items-center justify-between w-full">
           <div>
             <div className="flex items-center gap-3">
-              <p className="font-bold text-sm">Live Benefit Helpline</p>
+              <p className="font-bold text-sm">Emergency Debt Relief</p>
               <img src={tick} className="w-4 h-4"  style={{marginLeft:"-6px"}}/>
             </div>
             <p className="text-sm ">online</p>
